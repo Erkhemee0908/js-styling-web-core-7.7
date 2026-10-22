@@ -65,7 +65,7 @@ body {
 .brands__slider {
   overflow: visible;
   padding: 16px;
-  padding-bottom: 38px;
+  padding-bottom: 68px;
 }
 
 .brands__item {
@@ -84,8 +84,6 @@ body {
   justify-content: space-between;
   padding: 0 16px;
   border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
 }
 
 .brands__link:focus-visible {
@@ -113,7 +111,7 @@ body {
 }
 
 .brands__pagination {
-  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .brands__pagination .swiper-pagination-bullet {
@@ -198,7 +196,7 @@ body {
   }
 
   .brands--expanded .brands__expand-button--hide {
-    display: block;
+    display: flex;
   }
 }
 @media (min-width: 1120px) {
@@ -216,10 +214,11 @@ body {
   }
   .brands__expand-button {
     margin: 32px;
+    margin-top: 0;
   }
 
   .brands__item:nth-child(n + 7) {
-    display: block;
+    display: flex;
   }
 
   .brands__item:nth-child(n + 9) {
