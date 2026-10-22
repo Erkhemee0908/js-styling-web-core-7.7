@@ -33,6 +33,7 @@ body {
   background-color: var(--bg);
   position: relative;
   overflow: hidden;
+  border-top: 1px solid var(--accent);
 }
 
 .brands__title {
@@ -42,7 +43,6 @@ body {
   text-transform: uppercase;
   color: var(--light);
   padding: 16px;
-  border-top: 1px solid var(--accent);
 }
 
 /* fade on the right edge */
