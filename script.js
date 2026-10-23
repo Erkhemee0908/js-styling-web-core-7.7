@@ -8,8 +8,6 @@ function initSwiper() {
     pagination: {
       el: ".brands__pagination",
       clickable: true,
-      dynamicBullets: true,
-      dynamicMainBullets: 9,
     },
   });
 }
@@ -33,10 +31,15 @@ desktop.addEventListener("change", toggleSwiper);
 // Expand button functionality
 
 const brands = document.querySelector(".brands");
-const expandButtons = document.querySelectorAll(".brands__expand-button");
+const expandButton = document.querySelector(".brands__expand-button");
+const expandImage = document.querySelector(".brands__expand-image");
+const expandText = document.querySelector(".brands__expand-text");
 
-expandButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    brands.classList.toggle("brands--expanded");
-  });
+expandButton.addEventListener("click", () => {
+  const isExpanded = brands.classList.toggle("brands--expanded");
+
+  expandText.textContent = isExpanded ? "Hide" : "Show all";
+  expandImage.src = isExpanded
+    ? "assets/style-project__hide.svg"
+    : "assets/style-project__expand.svg";
 });
