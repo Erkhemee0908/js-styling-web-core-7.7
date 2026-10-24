@@ -96,6 +96,10 @@ body {
   outline-offset: 2px;
 }
 
+.brands__hp-logo {
+  padding-left: 10px;
+}
+
 .brands__logo-img {
   display: block;
   object-position: left center;
@@ -107,6 +111,7 @@ body {
 
 .brands__pagination {
   margin-bottom: 32px;
+  line-height: 0;
 }
 
 .brands__pagination .swiper-pagination-bullet {
